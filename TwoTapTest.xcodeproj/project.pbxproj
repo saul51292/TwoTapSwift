@@ -13,6 +13,7 @@
 		C74BE1AE1B73CD7500768067 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C74BE1AD1B73CD7500768067 /* Images.xcassets */; };
 		C74BE1B11B73CD7500768067 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C74BE1AF1B73CD7500768067 /* LaunchScreen.xib */; };
 		C74BE1BD1B73CD7500768067 /* TwoTapTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74BE1BC1B73CD7500768067 /* TwoTapTestTests.swift */; };
+		C74BE1C71B73CFC400768067 /* CheckoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74BE1C61B73CFC400768067 /* CheckoutVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		C74BE1B61B73CD7500768067 /* TwoTapTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwoTapTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C74BE1BB1B73CD7500768067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C74BE1BC1B73CD7500768067 /* TwoTapTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoTapTestTests.swift; sourceTree = "<group>"; };
+		C74BE1C61B73CFC400768067 /* CheckoutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				C74BE1A61B73CD7500768067 /* AppDelegate.swift */,
 				C74BE1A81B73CD7500768067 /* ViewController.swift */,
 				C74BE1AA1B73CD7500768067 /* Main.storyboard */,
+				C74BE1C61B73CFC400768067 /* CheckoutVC.swift */,
 				C74BE1AD1B73CD7500768067 /* Images.xcassets */,
 				C74BE1AF1B73CD7500768067 /* LaunchScreen.xib */,
 				C74BE1A41B73CD7500768067 /* Supporting Files */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C74BE1C71B73CFC400768067 /* CheckoutVC.swift in Sources */,
 				C74BE1A91B73CD7500768067 /* ViewController.swift in Sources */,
 				C74BE1A71B73CD7500768067 /* AppDelegate.swift in Sources */,
 			);
@@ -411,6 +415,7 @@
 				C74BE1C21B73CD7500768067 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C74BE1C31B73CD7500768067 /* Build configuration list for PBXNativeTarget "TwoTapTestTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				C74BE1C51B73CD7500768067 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
