@@ -22,7 +22,9 @@ class CheckoutVC: UIViewController,WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         customCSS = "http:/\(localhostString):2500/stylesheets/integration_twotap_ios.css"
-          ttPath = "http://\(localhostString):2500/integration_iframe?custom_css_url=\(customCSS)&product=\(urlString)"
+        if let encodedDealUrl = urlString.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLHostAllowedCharacterSet()){
+          ttPath = "http://\(localhostString):2500/integration_iframe?custom_css_url=\(customCSS)&product=\(encodedDealUrl)"
+        }
         navigationController?.navigationBar.hidden = true
         theWebView.navigationDelegate = self
         if let url = NSURL(string: ttPath) {
