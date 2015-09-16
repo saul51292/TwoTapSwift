@@ -10,23 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var whatToSend:String!
+    var urlString:String!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    @IBAction func confirmTwoTap(sender: AnyObject) {
-        whatToSend = "confirm"
-        self.performSegueWithIdentifier("moveToView", sender: self)
-    }
-    @IBAction func walletTwoTap(sender: AnyObject) {
-        whatToSend = "wallet"
-        self.performSegueWithIdentifier("moveToView", sender: self)
-    }
     
-    @IBAction func DealTwoTap(sender: AnyObject) {
-        whatToSend = "deal"
+    @IBAction func startTwoTap(sender: AnyObject) {
+        urlString = "http://www.nastygal.com/sale/the-jetset-diaries-eternal-whispers-embroidered-dress"
         self.performSegueWithIdentifier("moveToView", sender: self)
         
     }
@@ -40,7 +31,7 @@ class ViewController: UIViewController {
         if (segue.identifier == "moveToView") {
             // pass data to next view
             let vc = segue.destinationViewController as! CheckoutVC
-            vc.whatToGet = whatToSend
+            vc.urlString = urlString
         }
     }
     
